@@ -4,7 +4,18 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="./favicon.ico">
-        <title>​</title>
+        <title>&#8203;</title>
+        <meta property="og:site_name" content="">
+        <meta property="og:title" content="ブックマークバーに境界線を作れるページ">
+        <meta name="twitter:title" content="ブックマークバーに境界線を作れるページ">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://1heisuzuki.github.io/bookmarks-bar-divider/">
+        <meta name="description" content="このページをブックマークすると、ブラウザのブックマークバーに境界線を追加できます。">
+        <meta name="og:description" content="このページをブックマークすると、ブラウザのブックマークバーに境界線を追加できます。">
+        <meta name="twitter:description" content="このページをブックマークすると、ブラウザのブックマークバーに境界線を追加できます。">
+        <meta property="og:image" content="https://1heisuzuki.github.io/bookmarks-bar-divider/thumbnail.jpg">
+        <meta property="twitter:image" content="https://1heisuzuki.github.io/bookmarks-bar-divider/thumbnail.jpg">
+        <meta name="twitter:card" content="summary_large_image">
         <style>
             *,
             :after,
@@ -19,17 +30,25 @@
                 margin: 0;
                 padding: 2rem;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+                background: #FAFAFA;
             }
 
             article {
-                display: table;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 100%;
                 height: 100%;
             }
 
             section {
-                display: table-cell;
-                vertical-align: middle;
+                max-width: 500px;
+            }
+
+            .thumbnail-image {
+                object-fit: cover;
+                width: 100%;
+                margin-bottom: 2rem;
             }
 
             h1,
@@ -37,6 +56,31 @@
                 margin-top: 0;
                 margin-inline: auto;
                 max-inline-size: max-content;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .description {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-size: 18px;
+                line-height: 1.75;
+            }
+
+            .sup {
+                margin-top: -1.5rem;
+                font-size: 12px;
+            }
+
+            .urls {
+                margin-top: 3rem;
+            }
+
+            .urls a {
+                display: block;
+                margin-bottom: 0.5rem;
             }
 
             code {
@@ -48,14 +92,29 @@
     <body>
         <article>
             <section>
-                <h1>ブックマークバーに境界線を作れるファビコンのページ</h1>
-                <p>
-                    このページをブックマークすると、ブックマークバーに境界線を追加できます。
+                <img src="./thumbnail.jpg" class="thumbnail-image" alt="Google Chrome のブックマークバー部分のスクリーンショット。各サイトのアイコンの途中に、本ページをブックマークすることで追加した境界線が表示されている。" />
+                <h1>ブックマークバーに境界線を作れるページ</h1>
+                <p class="description">
+                    このページをブックマークすると、ブラウザのブックマークバーに境界線を追加できます。
                 </p>
-                <p>
-                    複数の境界線を 追加したい場合は、URL末尾に
+                <p class="description">
+                    ブックマークした際に、境界線右側のみスペースが広くなってしまった場合は、ブックマークのタイトルを編集してバックスペースで見えない文字を削除してください。
+                </p>
+                <p class="sup">
+                    *このサイトでは、タイトル部分に便宜上ゼロ幅スペースを挿入していますが、それが1文字の幅として認識されてしまい余分なスペースが表示されるようです。
+                </p>
+                <p class="description">
+                    複数の境界線を2本以上追加したい場合は、下記のようにURL末尾に
                     <code>#1</code> や
-                    <code>#2</code> などハッシュをつけた状態でこのページをブックマークしてください。
+                    <code>#2</code> などをつけた状態でブックマークしてください。文字列はなんでもOKです。
+                </p>
+                <p class="urls">
+                    <a href="https://1heisuzuki.github.io/bookmarks-bar-divider#1">https://1heisuzuki.github.io/bookmarks-bar-divider#1</a>
+                    <a href="https://1heisuzuki.github.io/bookmarks-bar-divider#2">https://1heisuzuki.github.io/bookmarks-bar-divider#2</a>
+                    <a href="https://1heisuzuki.github.io/bookmarks-bar-divider#3">https://1heisuzuki.github.io/bookmarks-bar-divider#3</a>
+                    <a href="https://1heisuzuki.github.io/bookmarks-bar-divider#4">https://1heisuzuki.github.io/bookmarks-bar-divider#4</a>
+                    <a href="https://1heisuzuki.github.io/bookmarks-bar-divider#5">https://1heisuzuki.github.io/bookmarks-bar-divider#5</a>
+                    <a href="https://1heisuzuki.github.io/bookmarks-bar-divider#6">https://1heisuzuki.github.io/bookmarks-bar-divider#6</a>
                 </p>
             </section>
         </article>
