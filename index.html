@@ -5,17 +5,60 @@
         <meta charset="utf-8">
         <link rel="icon" href="./favicon.ico">
         <title>​</title>
+        <style>
+            *,
+            :after,
+            :before {
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+                height: 100dvh;
+                margin: 0;
+                padding: 2rem;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+            }
+
+            article {
+                display: table;
+                width: 100%;
+                height: 100%;
+            }
+
+            section {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            h1,
+            p {
+                margin-top: 0;
+                margin-inline: auto;
+                max-inline-size: max-content;
+            }
+
+            code {
+                font-weight: bold;
+            }
+        </style>
     </head>
 
     <body>
-        <p>
-            このページをブックマークすると、ブックマークバーに境界線を追加できます。
-        </p>
-        <p>
-            複数の境界線を 追加したい場合は、URL末尾に
-            <code>#1</code> や
-            <code>#2</code> などハッシュをつけた状態でこのページをブックマークしてください。
-        </p>
+        <article>
+            <section>
+                <h1>ブックマークバーに境界線を作れるファビコンのページ</h1>
+                <p>
+                    このページをブックマークすると、ブックマークバーに境界線を追加できます。
+                </p>
+                <p>
+                    複数の境界線を 追加したい場合は、URL末尾に
+                    <code>#1</code> や
+                    <code>#2</code> などハッシュをつけた状態でこのページをブックマークしてください。
+                </p>
+            </section>
+        </article>
     </body>
 
 </html>
